@@ -1,37 +1,45 @@
 import ContactForm from "./components/ContactForm";
 import "./index.css";
 import Navbar from "./components/Navbar";
+import useScrollReveal from "./hooks/useScrollReveal";
 
 export default function App() {
+  useScrollReveal(); // ✅ activates the scroll reveal
+
   return (
     <main className="page">
-      {/* ✅ Navbar at the top */}
       <Navbar />
 
-      {/* ✅ Contact Section */}
-      <section className="hero" id="contact">
+      {/* ✅ Hero Section */}
+      <section className="hero reveal" id="contact">
         <div className="hero__content">
           {/* Left Side */}
-          <div className="hero__left">
-            <h2>Every frame begins with a thought.</h2>
+          <div className="hero__left reveal">
+            <h2>🎬 Crafting Emotions, One Frame at a Time</h2>
             <p>
-              Share your vision, and we’ll help you bring it to life.
+              At <strong>V Films</strong>, imagination meets precision.
               <br />
-              Let’s create stories worth watching.
+              Every idea you share becomes a story that moves hearts, inspires
+              minds, and lives beyond the screen.
             </p>
           </div>
 
           {/* Right Side */}
-          <div className="hero__right">
-            <h1>Join the Story</h1>
-            <p>Ready to bring your vision to life? Let’s talk.</p>
+          <div className="hero__right reveal">
+            <h1>✨ Let’s Turn Your Vision Into a Masterpiece</h1>
+            <p>
+              Whether it’s a concept, a dream, or a spark of inspiration — we’ll
+              help you shape it into something extraordinary.
+            </p>
+
+            {/* ✅ Contact Form */}
             <ContactForm />
 
-            {/* ✅ Contact Info Below Form */}
+            {/* ✅ Contact Info */}
             <div className="contact-details">
               <span>vfilms@gmail.com</span>
               <span> | </span>
-              <span>+91 98736 84567</span>
+              <span>+91 987885689</span>
             </div>
           </div>
         </div>

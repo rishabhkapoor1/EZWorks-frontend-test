@@ -34,7 +34,7 @@
 
 .navbar__links li a {
   text-decoration: none;
-  color: #090808; /* 👈 white text, works over colorful background */
+  color: #581384; /* 👈 white text, works over colorful background */
   font-weight: 500;
   transition: all 0.2s ease-in-out;
   letter-spacing: 0.5px;
