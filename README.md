@@ -17,4 +17,22 @@ A responsive single-page web app built with **React (Vite)** for EZ Labs assignm
 - Postman for API testing
 
 ## 🧪 API Test
-Postman dump is included in the repository as:
+The API integration was tested and verified using Postman.
+
+Postman dump file:
+
+postman_collection.json
+
+
+If you want to recheck it:
+
+Open Postman
+
+Go to Collections → Import
+
+Select the included postman_collection.json
+
+Hit Send to test the API endpoint
+
+API Endpoint:
+POST https://vernanbackend.ezlab.in/api/contact-us/
